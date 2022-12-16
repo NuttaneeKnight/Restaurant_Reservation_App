@@ -134,12 +134,30 @@ function Dashboard({
             <tbody>{reservationsJSX}</tbody>
           </table>
 
+          <br/>
+          <br/>
 
+          <h4 className='mb-4 pl-1 font-weight-bold'>Tables</h4>
+
+          <ErrorAlert error={tablesError} />
+
+          <table className='table table-hover m-1 text-nowrap mb-4'>
+            <thead className='thead-dark'>
+              <tr className='text-center'>
+              <th scope='col'>Table ID</th>
+              <th scope='col'>Table Name</th>
+              <th scope='col'>Capacity</th>
+              <th scope='col'>Status</th>
+              <th scope='col'>Reservation ID</th>
+              <th scope='col'>Finish</th>
+              </tr>
+            </thead>
+            <tbody>{tablesJSX()}</tbody>
+          </table>
         </div>
       </div>
     </main>
   )
-
 }
 export default Dashboard;
 

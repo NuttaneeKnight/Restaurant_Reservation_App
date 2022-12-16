@@ -1,15 +1,14 @@
-const service = require('./tables.service');
-const asyncErrorBoundary = require('../errors/asyncErrorBoundary');
+const service = require("./tables.service");
+const asyncErrorBoundary = require("../errors/asyncErrorBoundary");
 
 //VALIDATORS//
 
 //check the data boject in the request
 async function validateData(request, response, next) {
   if (!request.body.data) {
-    return next({ 
-      status: 400, 
-      message: "Body must include a data object" });
+    return next({ status: 400, message: "Body must include a data object" });
   }
+
   next();
 }
 
@@ -45,7 +44,7 @@ async function validateBody(request, response, next) {
 }
 
 //check that the reservation_id exists
-async function validateReservationId(request, response, next) {
+ async function validateReservationId(request, response, next) {
   const { reservation_id } = request.body.data;
 
   if (!reservation_id) {
@@ -167,6 +166,7 @@ async function destroy(request, response) {
   await service.free(response.locals.table.table_id);
   response.status(200).json({ data: { status: "finished" } });
 }
+
 
 module.exports = {
   list: asyncErrorBoundary(list),
