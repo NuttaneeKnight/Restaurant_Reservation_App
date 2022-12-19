@@ -67,7 +67,7 @@ export default function SeatReservation({
       <ErrorAlert error={error} />
       <form onSubmit={handleSubmit}>
         <label className='form-label' htmlFor='table_id'>
-          Select Table:&nbso;
+          Select Table:&nbsp;
         </label>
 
         <select classname='form-select' name='table_id' onChange={handleChange}>
