@@ -10,7 +10,7 @@ function Menu() {
   return (
     <div>
       <nav
-        className="nav navbar-nav mt-3"
+        className="nav navbar-nav mt-3 "
         style={{ position: "fixed", zIndex: "2" }}
       >
         <ul className="nav navbar-nav bg-dark" style={{ backgroundColor: "#FFB93A", fontFamily: 'monospace' }}>
