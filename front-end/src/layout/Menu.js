@@ -58,7 +58,7 @@ function Menu() {
               Reserve
               <Link className="nav-link " to="/reservations/new">
                 <span className="material-icons mr-2" style={{ color: "#FF5733" }}>
-                  local dining
+                  reserve
                 </span>
               </Link>
             </button>
@@ -74,7 +74,7 @@ function Menu() {
               Table
               <Link className="nav-link " to="/tables/new">
                 <span className="material-icons" style={{ color: "#FF5733" }}>
-                  table restaurant
+                  tables
                 </span>
               </Link>
             </button>
