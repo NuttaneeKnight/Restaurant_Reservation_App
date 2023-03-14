@@ -1,8 +1,5 @@
 # Capstone: Restaurant Reservation System
 
-Hello fellow coders,
-At the moment, Render has started charging for the service so I deployed the App at the code sandbox at the moment. As for the backend it's not running yet but I will migrate this to netlify shortly so you get to play around with the App. Have fun!
-
 > You have been hired as a full stack developer at _Periodic Tables_, a startup that is creating a reservation system for fine dining restaurants.
 > The software is used only by restaurant personnel when a customer calls to request a reservation.
 > At this point, the customers will not access the system online.
